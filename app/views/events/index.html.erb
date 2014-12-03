@@ -40,6 +40,9 @@
         <td>
           <%= link_to("Edit", edit_event_path(event))%>
         </td>
+        <td>
+          <%= link_to('delete', event_path(event), {method: :delete}) %>
+        </td>
       </tr>
     <% end %>
   </tbody>
